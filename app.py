@@ -13,7 +13,7 @@ st.set_page_config(page_title="Next Word Predictor", page_icon="🔮")
 def load_model_and_tokenizer():
     with open('tokenizer.pkl', 'rb') as file:
         tokenizer = pickle.load(file)
-    model = pickle.load(open("Nest_word_predictor1.pkl", "rb"))#load_model('Nest_word_predictor1.keras')
+    model = pickle.load(open("nest_word_predictor1.pkl", "rb"))#load_model('Nest_word_predictor1.keras')
     return model, tokenizer
 
 model, tokenizer = load_model_and_tokenizer()
